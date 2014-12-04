@@ -1,5 +1,5 @@
 class issue (
-  $file => undef
+  $file = undef
 ) {
   # Issue banner
   file { '/etc/issue.net':
