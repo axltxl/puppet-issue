@@ -1,8 +1,0 @@
-name    'axltxl-issue'
-version '0.1.0'
-source 'https://github.com/axltxl/puppet-issue'
-author 'Alejandro Ricoveri'
-license 'MIT'
-summary 'issue file module'
-description 'Puppet module to handle /etc/issue and issue.net'
-project_page 'https://github.com/axltxl/puppet-issue'
