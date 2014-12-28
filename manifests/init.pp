@@ -28,6 +28,8 @@ class issue (
   # Issue banner
   file { '/etc/issue.net':
     ensure => file,
+    '/etc/issue',
+    '/etc/issue.net'
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
