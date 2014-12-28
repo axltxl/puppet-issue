@@ -7,7 +7,7 @@ describe 'issue', :type => :class do
     let(:params) { {:file => 'dummy'} }
     it {
       should contain_file('/etc/issue.net').with({
-        'ensure' => 'file',
+        'ensure' => 'latest',
         'owner'  => 'root',
         'group'  => 'root',
         'mode'   => '0644',
