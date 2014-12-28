@@ -23,14 +23,20 @@
 #
 
 class issue (
-  $file = undef
+  $source = undef
 ) {
+  #
+  # Issue file
+  #
+  file {
+    [
     '/etc/issue',
     '/etc/issue.net'
+    ]:
     ensure => 'latest',
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    source => $file
+    source => $source
   }
 }

@@ -1,11 +1,16 @@
 require 'spec_helper'
 
 describe 'issue', :type => :class do
-  let(:title) { 'issue' }
-
   context 'with file => dummy' do
-    let(:params) { {:file => 'dummy'} }
+    let(:params) { {:source => 'dummy'} }
     it {
+      should contain_file('/etc/issue').with({
+        'ensure' => 'latest',
+        'owner'  => 'root',
+        'group'  => 'root',
+        'mode'   => '0644',
+        'source' => 'dummy'
+      })
       should contain_file('/etc/issue.net').with({
         'ensure' => 'latest',
         'owner'  => 'root',
@@ -15,5 +20,4 @@ describe 'issue', :type => :class do
       })
     }
   end
-
 end
