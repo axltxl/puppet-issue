@@ -1,4 +1,4 @@
-# == Class: dumber
+# == Class: issue
 #
 # Wrapper class to handle issue files
 #
