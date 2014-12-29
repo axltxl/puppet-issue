@@ -1,9 +1,8 @@
 {
   "name": "axltxl-issue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Alejandro Ricoveri",
-  "summary": "UNKNOWN",
-  "description" : "Puppet module to handle /etc/issue and issue.net",
+  "summary": "Puppet module to handle /etc/issue and issue.net",
   "license": "MIT",
   "source": "https://github.com/axltxl/puppet-issue",
   "project_page": "https://github.com/axltxl/puppet-issue",
@@ -26,7 +25,7 @@
   "dependencies": [
     {
       "name":"puppetlabs/stdlib",
-      "version_requirement":">= 4.4.0"
+      "version_requirement":">= 4.4.0 <5.0.0"
     }
   ]
 }
