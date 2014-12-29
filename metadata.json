@@ -1,6 +1,6 @@
 {
   "name": "axltxl-issue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Alejandro Ricoveri",
   "summary": "UNKNOWN",
   "description" : "Puppet module to handle /etc/issue and issue.net",
@@ -11,7 +11,17 @@
   "operatingsystem_support": [
     {
       "operatingsystem": "Ubuntu"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
     },
+    {
+      "name": "puppet",
+      "version_requirement": ">=3.7.0 <4.0.0"
+    }
   ],
   "dependencies": [
     {
