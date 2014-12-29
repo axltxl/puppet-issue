@@ -1,12 +1,42 @@
+# == Class: issue
+#
+# Wrapper class to handle issue files
+#
+# === Parameters
+#
+# [*source*]
+#   Source file to be used
+#
+# === Examples
+#
+#  class { 'issue':
+#    source => 'puppet://files/my_issue.txt'
+#  }
+#
+# === Authors
+#
+# Alejandro Ricoveri <alejandroricoveri@gmail.com>
+#
+# === Copyright
+#
+# Copyright 2014 Alejandro Ricoveri.
+#
+
 class issue (
-  $file = undef
+  $source = undef
 ) {
-  # Issue banner
-  file { '/etc/issue.net':
-    ensure => file,
+  #
+  # Issue file
+  #
+  file {
+    [
+    '/etc/issue',
+    '/etc/issue.net'
+    ]:
+    ensure => 'latest',
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    source => $file
+    source => $source
   }
 }
