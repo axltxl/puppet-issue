@@ -1,7 +1,7 @@
 #puppet-issue
 
 ##Overview
-As you might know already, on nix-based systems,  `/etc/issue*` text files contain a message or system identification to be printed before the login prompt of a session (such as telnet or ssh). This module is a simple wrapper class who deals with the management of such `issue` files.
+As you might know already, on *nix-based systems,  `issue` text files contain a message or system identification to be printed before the login prompt of a session (such as telnet or ssh). This module is a simple wrapper class who deals with the management of such `issue` files.
 
 ##Description
 The `issue` module will handle the creation and update of `/etc/issue*` files on *nix-based systems.
