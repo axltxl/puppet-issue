@@ -33,7 +33,7 @@ class issue (
     '/etc/issue',
     '/etc/issue.net'
     ]:
-    ensure => 'latest',
+    ensure => 'file',
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
